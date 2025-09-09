@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submitted Forms</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="home-link">&larr; Back to Home</a>
+  <h1>Submitted Service Forms</h1>
+
+    <input type="text" id="searchInput" placeholder="Search by company, branch, or feedback..." />
+
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)">#</th>
+          <th onclick="sortTable(1)">SAF Date</th>
+          <th onclick="sortTable(2)">Ticket #</th>
+          <th onclick="sortTable(3)">Company</th>
+          <th onclick="sortTable(4)">Branch</th>
+          <th onclick="sortTable(5)">Reported By</th>
+          <th onclick="sortTable(6)">Support Type</th>
+          <th onclick="sortTable(7)">Feedback</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- Rows will be inserted by JS -->
+      </tbody>
+    </table>
+
+    <div id="pagination"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
